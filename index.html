@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T5's</title>
+</head>
+<body>
+
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+
+        body {
+            background: linear-gradient(45deg,#1a1a1a, #0a0a0a, #000000);
+        }
+        
+        .ttl1,
+        .ttl2 {
+            color: red;
+            text-align: center;
+            margin: 2vw;
+        }
+
+        .ttl1 {
+            font-size: 12em;
+            font-family: 'MuseoModerno', cursive;
+        }
+
+        .ttl2 {
+            font-style: italic;
+            font-family: 'Press Start 2P', cursive;
+            line-height: 1.8em;
+            font-size: 3em;
+        }
+        
+        header {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+       }
+
+       .menu {
+       background-color: white;
+       position: fixed;
+        width: 10vw;
+        left: 1cm;
+        margin: 1cm;
+       top: 0;
+       z-index: 1;
+      }
+
+       .menu ul {
+       display: flex;
+       justify-content: space-around;
+        }
+
+       .menu li {
+       list-style: none;
+       }
+
+       .menu a {
+       display: block;
+       padding: 9px 20px;
+       transition: background-color 1s, color 1s;
+       }
+
+      .menu a:active,
+      .menu a:hover {
+      background-color: red;
+      color: white;
+      }
+
+      .a1 {
+      color: red;
+      text-decoration: none;
+      }
+
+      .a1:hover {
+      text-decoration: underline; 
+      }
+
+      .ststt {
+          color: whitesmoke;
+          font-family: 'MuseoModerno', cursive;
+          font-size: 50px;
+          margin: 4vw;
+          transition: transform .6s;
+          width: 105;
+          height: 105;
+          object-fit: cover;
+          object-position: left bottom;
+      }
+
+      .ststt:hover {
+          transform: scale(0.95);
+          transition: .2s;
+      }
+
+      .img1 {
+          margin: 2vw;
+          display: inline-table;
+          transform: scale(1.4);
+          transition: transform .5s;
+          margin-left: 3.5vw;
+      }
+
+      .img1:hover {
+          transform: scale(1.8);
+          transition: .3;
+      }
+
+      .seta {
+          margin-bottom: 6vw;
+      }
+
+      .seta:hover {
+        transform: scale(2);
+          transition: .3;
+      }
+
+      .stsprincipais {
+          margin-bottom: 7vw;
+          padding: 1vw;
+      }
+
+      .STS {
+          background-color: rgba(231, 231, 231, 0.025);
+          border-radius: 5em;
+          margin-right: 2em;
+          margin-left: 2em;
+          padding-bottom: 2vw;
+          margin-bottom: 4vw;
+      }
+
+      button {
+          display: inline-table;
+          font-size: 1.5em;
+          padding: 1vw;
+          margin-top: 1.8em;
+          border-radius: 4em;
+          transition: transform .6s;
+          background: rgba(226, 226, 226, 0.2);
+          color: whitesmoke;
+          font-family: 'MuseoModerno', cursive;
+      }
+
+      button:hover {
+          transform: scale(1.3);
+          transition: .6s;
+      }
+
+      .ts77 {
+          margin-left: 8em;
+          padding-right: 0.73vw;
+          padding-left: 0.73vw;
+          margin-right: 3vw;
+      }
+
+      .fnw {
+          padding-left: 2.35vw;
+          padding-right: 2.35vw;
+          margin-right: 3vw;
+      }
+
+      .htmlcss {
+          padding-right: 1.5vw;
+          padding-left: 1.5vw;
+          margin-right: 3vw;
+      }
+
+      .soon,
+      .nnos {
+          padding-right: 2.4vw;
+          padding-left: 2.4vw;
+          margin-right: 3vw;
+      }
+
+      a {
+          color:whitesmoke;
+          text-decoration: none;
+      }
+
+
+
+      .contato .icons {
+        text-align: center;
+      }
+
+      .contato a {
+       color: whitesmoke;
+       font-size: 4em;
+       transition: text-shadow 1s;
+      } 
+
+      .contato a:active,
+      .contato a:hover  {
+        text-decoration: none;
+        text-shadow: 0px 0px 10px rgba(255,255,255,.5);
+      }
+
+      .img23 {
+          margin: 3vw;
+          float: left;
+          margin-left: 5vw;
+          border-radius: 3em;
+          transition: transform .2s;
+        }
+
+      .img23:hover {
+        transform: scale(1.15);
+          transition: .5s;
+      }
+
+      h3 {
+        font-family: 'Pangolin', cursive;
+        color: whitesmoke;
+        font-size: 7mm;
+        margin: 3vw;
+        margin-top: 6vw;
+        margin-right: 8vw;
+      }
+
+      .Noticiastitulo {
+          color: whitesmoke;
+          margin: 6vw;
+          margin-bottom: 2vw;
+          font-size: 10mm;
+          font-family: 'MuseoModerno', cursive;
+      }
+
+      .bt2 {
+          margin-bottom: 4vw;
+      }
+
+      .ttct {
+          padding-top: 1.5em;
+          margin-left: 1.5em;
+          margin-bottom: 2.5em;
+          color: whitesmoke;
+          font-family: 'MuseoModerno', cursive;
+          font-size: 3em;
+      }
+
+      .contato {
+          background-color: rgb(65, 65, 65, 0.4);
+          padding-bottom: 6em;
+          border-top-left-radius: 2em;
+          border-top-right-radius: 2em;
+      }
+
+      .rdct {
+          margin-left: 10em;
+      }
+
+    </style>
+
+   <header>
+
+    <nav class="menu">
+        <ul class="container">
+          <li><a href="#" class="a1">Inicio</a></li>
+        </ul>
+      </nav>
+
+    <div class="ttl">
+         <h1 class="ttl1">T5's</h1><br>
+        <p>
+         <h2 class="ttl2">Tiago Santos sites</h2>
+        </p>
+    </div>
+   </header>
+
+    <section class="STS">
+
+        <div class="ststt">
+            <h1>Sites</h1>
+        </div>
+
+        <div class="stsprincipais">
+            <a><img src="img/left.png" alt="left" width="40" height="40" class="seta img1"></a>
+            <a><img src="img/ts27-1.png" alt="left" width="120" height="210" class="img1"></a>
+            <a><img src="img/ts27-2.png" alt="left" width="120" height="210" class="img1"></a>
+            <a><img src="img/ts27-3.png" alt="left" width="120" height="210" class="img1"></a>
+            <a><img src="img/Soon...1.png" alt="left" width="120" height="210" class="img1"></a>
+            <a><img src="img/Soon...2.png" alt="left" width="120" height="210" class="img1"></a>
+            <a><img src="img/right.png" alt="left" width="40" height="40" class="seta img1"></a><br>
+            <button class="ts77" type="button" ><a href="https://tsantos2007.github.io/Inicio/"> Tsantos2007</a></button>
+            <button class="fnw">FNews</button>
+            <button class="htmlcss">Html&Css</button>
+            <button class="soon" type="button" onclick="alert('Soon... 25/07')">Soon...</button>
+            <button class="nnos" type="button" onclick="alert('Soon...08/2020')"S>Soon...</button>
+            
+        </div>
+    </section>
+
+    <section class="Noticias">
+        <div class="Noticiastitulo">
+            <h1>Noticias</h1>
+        </div>
+        <div class="Noticiasimg">
+            <img src="img/N1.jpg" alt="right" width="400" height="300" class="img23">
+            <h3 class="h323">A terceira temporada de Fortnite mantém armas míticas e mantém a rotina praticamente a mesma. Você precisa coletar armas míticas de personagens chefes e terá que lutar com unhas e dentes para obtê-las - ou apenas ser incrivelmente oportunista. Com um novo mapa para explorar, você precisará saber para onde procurar se deseja obter uma arma mítica que seja melhor para o seu estilo de jogo.
+                <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+            </h3>
+            <button class="bt2"><a href="file:///C:/Users/Tiago%20Santos/Desktop/TiagoInicio/FNews.html">Ver mais...</a></button>
+        </div>
+    </section>
+
+    <section class="contato">
+        <div class="ttct">
+            <h1>Contacto</h1>
+        </div>
+        <div class="rdct">
+            <a href="https://www.instagram.com/tsantos2007/?hl=pt">Instagram</a>
+        </div>
+    </section>
+   
+</body>
+</html>
